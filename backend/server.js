@@ -2,12 +2,17 @@ const express =require('express');
 const dotenv=require('dotenv');
 const mongoose=require('mongoose');
 const cors=require('cors');
+const userRoutes=require('./routes/userRoutes');
+
 
 
 dotenv.config();
 const app=express();
 app.use(express.json());
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use('/api/users',userRoutes);
+
 
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser:true,
     useUnifiedTopology:true,
