@@ -1,6 +1,9 @@
 # =========================
 # General
 # =========================
+backend/node_modules/
+frontend/node_modules/
+frontend/.env
 node_modules/
 .env
 .env.local
@@ -23,30 +26,30 @@ desktop.ini
 # =========================
 # Backend (Express/Node.js)
 # =========================
-/server/node_modules
-/server/.env
-/server/dist
-/server/build
-/server/logs
-/server/*.log
-/server/tmp
-/server/uploads/
-server/package-lock.json
+/backend/node_modules
+/backend/.env
+/backend/dist
+/backend/build
+/backend/logs
+/backend/*.log
+/backend/tmp
+/backend/uploads/
+backend/package-lock.json
 
 # =========================
 # Frontend (React/Vite)
 # =========================
-/client/node_modules
-/client/.env
-/client/build
-/client/dist
-/client/.vite
-/client/.cache
-/client/.parcel-cache
+/frontend/node_modules
+/frontend/.env
+/frontend/build
+/frontend/dist
+/frontend/.vite
+/frontend/.cache
+/frontend/.parcel-cache
 client/package-lock.json
 
 # React testing / coverage
-/client/coverage
+/frontend/coverage
 
 # =========================
 # IDEs and Editors
